@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import DemoBanner from '../components/DemoBanner';
+
 
 export default function MainLayout() {
   const location = useLocation();
@@ -14,7 +14,7 @@ export default function MainLayout() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background-primary text-white selection:bg-brand-cyan/20 selection:text-brand-cyan">
-      <DemoBanner />
+      
       <Navbar />
       <main className="flex-1">
         <Outlet />
